@@ -2,7 +2,6 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2604.21744-b31b1b.svg)](https://arxiv.org/abs/2604.21744)
 
-*The badge above is a convenient visual link to the pre‑print on arXiv; clicking it opens the paper in your browser.*
 
 This repository hosts the full set of **experiment artefacts** that support the study
 *“Agentic AI‑assisted coding offers a unique opportunity to instill epistemic grounding during software development*”
@@ -12,7 +11,7 @@ by **Magnus Palmblad, Jared M. Ragland, and Benjamin A. Neely** (2026)
 
 ## 📖 Overview
 
-The work investigates how a **grounding specification** (`grounding.md`) can be given *authoritative priority* over project‑specific rules (`CLAUDE.md`) when using Claude Code.  Six deliberately crafted test prompts each violate a distinct **Hard Constraint (HC)** from the grounding file.  By running **fresh Claude Code agent sessions** for each prompt we explored:
+The work investigates how a **grounding specification** (`GROUNDING.md`) can be given *authoritative priority* over project‑specific rules (`CLAUDE.md`) when using Claude Code.  Six deliberately crafted test prompts each violate a distinct **Hard Constraint (HC)** from the grounding file.  By running **fresh Claude Code agent sessions** for each prompt we explored:
 
 1. Whether the grounding file can *override* conflicting user‑oriented priorities.
 2. Which priority‑establishment mechanisms (system‑prompt injection, meta‑instructions, XML tagging) succeed or fail.
@@ -31,7 +30,7 @@ The results are documented in a series of markdown reports and the verbatim agen
   – Full HTML source (useful for copying text): [https://arxiv.org/html/2604.21744v1](https://arxiv.org/html/2604.21744v1)
 - **Supplementary repository** (contains the grounding specification and paper‑specific appendix):
   [OmicsContext/proteomics-context]([OmicsContext/proteomics-context](https://github.com/OmicsContext/proteomics-context))
-  - `grounding.md` – the authoritative grounding file.
+  - `GROUNDING.md` – the authoritative grounding file.
   - `Appendix_A.md` – the appendix that appears as supplementary information in the submitted manuscript.
 
 ---
