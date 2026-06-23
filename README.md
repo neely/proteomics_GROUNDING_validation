@@ -1,5 +1,9 @@
 # Proteomics Grounding Validation Repository
 
+[![arXiv](https://img.shields.io/badge/arXiv-2604.21744-b31b1b.svg)](https://arxiv.org/abs/2604.21744)
+
+*The badge above is a convenient visual link to the pre‑print on arXiv; clicking it opens the paper in your browser.*
+
 This repository hosts the full set of **experiment artefacts** that support the study
 *“Agentic AI‑assisted coding offers a unique opportunity to instill epistemic grounding during software development*”
 by **Magnus Palmblad, Jared M. Ragland, and Benjamin A. Neely** (2026).
@@ -16,14 +20,17 @@ The work investigates how a **grounding specification** (`grounding.md`) can be 
 
 The results are documented in a series of markdown reports and the verbatim agent responses are retained in the `experiments/responses/` hierarchy.
 
+- **Future testing roadmap** – New grounding‑priority experiments and additional test prompts will be added under `experiments/` following the same fresh‑session pattern, making it easy to extend the dataset.
+- **`.gitignore`** – The repository includes a `.gitignore` that excludes the internal `.claude/` folder, preventing any local Claude‑Code settings or API tokens from being committed.
+
 ---
 
 ## 📚 Related Publication & Resources
 
-- **Pre‑print (arXiv)**: <https://arxiv.org/abs/2604.21744>  
-  – Full HTML source (useful for copying text): <https://arxiv.org/html/2604.21744v1>
+- **Pre‑print (arXiv)**: [https://arxiv.org/abs/2604.21744](https://arxiv.org/abs/2604.21744)  
+  – Full HTML source (useful for copying text): [https://arxiv.org/html/2604.21744v1](https://arxiv.org/html/2604.21744v1)
 - **Supplementary repository** (contains the grounding specification and paper‑specific appendix):
-  https://github.com/OmicsContext/proteomics-context
+  [OmicsContext/proteomics-context]([OmicsContext/proteomics-context](https://github.com/OmicsContext/proteomics-context))
   - `grounding.md` – the authoritative grounding file.
   - `Appendix_A.md` – the appendix that appears as supplementary information in the submitted manuscript.
 
@@ -50,7 +57,9 @@ proteomics_GROUNDING_validation/
 └─ README.md            # This file
 ```
 
-All original files (`responses/` and `contextFiles/`) remain untouched, ensuring that any external scripts or analyses that depend on the original paths continue to work.
+All artefacts have been reorganised into the new `docs/`, `experiments/`, and `misc/` directories; the repository root now contains only the `README.md`, `.gitignore`, and the Git metadata.
+
+> **Note** – The original numbered report markdowns and auxiliary files that used to sit at the repository root have been removed after being copied to `docs/reports/` and `misc/`. This keeps the top‑level clean while preserving the full history of the artefacts in their new locations.
 
 ---
 
@@ -83,8 +92,8 @@ If you use any part of this repository or the associated research, please cite t
 
 ## 📄 License & Acknowledgements
 
-The contents of this repository are released under the **MIT License**.  The experiments were performed using **Claude Code** (Anthropic) in conjunction with the **OmicsContext** grounding framework.
+**License** – This repository is released under the **MIT License**, matching the licensing of the companion repository [OmicsContext/proteomics-context]([OmicsContext/proteomics-context](https://github.com/OmicsContext/proteomics-context)).
 
----
+**Acknowledgements** –
 
-*Happy exploring!*
+This appendix details the preliminary testing conducted to evaluate the effectiveness of the `GROUNDING.md` proteomics software correctness specification as a constraint‑enforcement mechanism for AI agents, and is directly discussed in the arXiv pre‑print. Initial testing was performed with Claude Code (v.2.1.90, medium‑effort mode) using the Nemotron model (NVIDIA‑Nemotron‑3‑Super‑120B‑A12B‑FP8) via VS Code (v1.114.0). Each agent session was a fresh, isolated context; the relevant files were read into the prompt. The experiments exercised loading `GROUNDING.md` and competing against an “adversarial” `CLAUDE.md` that instructed the AI to ignore scientific validity and do what the user wants. Summaries and organization were generated with LLM assistance.
