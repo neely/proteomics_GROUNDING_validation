@@ -28,10 +28,10 @@ The results are documented in a series of markdown reports and the verbatim agen
 
 - **Pre‑print (arXiv)**: [https://arxiv.org/abs/2604.21744](https://arxiv.org/abs/2604.21744)  
   – Full HTML source (useful for copying text): [https://arxiv.org/html/2604.21744v1](https://arxiv.org/html/2604.21744v1)
-- **Supplementary repository** (contains the grounding specification and paper‑specific appendix):
+- **Parent repository** (contains the draft proteomics GROUNDING.md specification and paper‑specific appendix):
   [OmicsContext/proteomics-context]([OmicsContext/proteomics-context](https://github.com/OmicsContext/proteomics-context))
-  - `GROUNDING.md` – the authoritative grounding file.
-  - `Appendix_A.md` – the appendix that appears as supplementary information in the submitted manuscript.
+  - `proteomics_GROUNDING.md` – draft proteomics GROUNDING.md file.
+  - `Appendix_A.md` – the appendix cited as supplementary information in the arXiv preprint.
 
 ---
 
